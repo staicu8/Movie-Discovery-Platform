@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StaicuMovies</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="icon" href="logo.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script2.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Acasă</a></li>
+          <li class="dropdown">
+            <a href="#">Categorii</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" data-category="Acțiune">Acțiune</a></li>
+              <li><a href="#" data-category="Dramă">Dramă</a></li>
+              <li><a href="#" data-category="Comedie">Comedie</a></li>
+              <li><a href="#" data-category="Horror">Horror</a></li>
+              <li><a href="#" data-category="Romantic">Romantic</a></li>
+              <li><a href="#" data-category="Sci-Fi">Sci-Fi</a></li>
+              <li><a href="#" data-category="Animație">Animație</a></li>
+              <li><a href="#" data-category="Mister">Mister</a></li>
+              <li><a href="#" data-category="Toate">Toate</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Favorite</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+      <form class="search-bar" onsubmit="return false">
+        <input type="text" placeholder="Caută filme..." aria-label="Search" />
+        <button type="submit"><img src="search.png" alt="Search" /></button>
+      </form>
+      </div>
+      <img class="logo" src="logo.png" alt="Logo" />
+    </header>
+
+    <div class="sort-controls">
+      <button id="sort_rating">
+        Sorteza dupa Rating ↓
+      </button>
+      <button id="sort_titlu" onclick="sortMovies('title', 'asc')">
+        Sorteaza dupa titlu ↑
+      </button>
+    </div>
+
+    <main id="movies-list" class="movies-grid">
+      <button class="incarca">Incarca filmele</button>
+    </main>
+
+    <footer>
+      <p>Sper sa va placa aceste filme!</p>
+      <div class="canvas-container">
+        <canvas id="cameraCanvas" width="200" height="150"></canvas>
+      </div>
+    </footer>
+  </body>
+</html>

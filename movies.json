@@ -1,0 +1,196 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Interstellar",
+      "rating": 8.7,
+      "category": "Sci-Fi",
+      "imdbUrl": "https://www.imdb.com/title/tt0816692/",
+      "imageUrl": "interstellar.jpg"
+    },
+    {
+      "id": 2,
+      "title": "The Dark Knight",
+      "rating": 9.0,
+      "category": "Acțiune",
+      "imdbUrl": "https://www.imdb.com/title/tt0468569/",
+      "imageUrl": "the_dark_knight.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Skyfall",
+      "rating": 7.8,
+      "category": "Acțiune",
+      "imdbUrl": "https://www.imdb.com/title/tt1074638/",
+      "imageUrl": "skyfall.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Inception",
+      "rating": 8.8,
+      "category": "Sci-Fi",
+      "imdbUrl": "https://www.imdb.com/title/tt1375666/",
+      "imageUrl": "inception.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Avengers: Endgame",
+      "rating": 8.4,
+      "category": "Acțiune",
+      "imdbUrl": "https://www.imdb.com/title/tt4154796/",
+      "imageUrl": "avengers.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "WALL-E",
+      "rating": 8.4,
+      "category": "Animație",
+      "imdbUrl": "https://www.imdb.com/title/tt0910970/",
+      "imageUrl": "wall-e.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Coco",
+      "rating": 8.4,
+      "category": "Animație",
+      "imdbUrl": "https://www.imdb.com/title/tt2380307/",
+      "imageUrl": "coco.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Knives Out",
+      "rating": 7.9,
+      "category": "Mister",
+      "imdbUrl": "https://www.imdb.com/title/tt8946378/",
+      "imageUrl": "knives_out.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Sinister",
+      "rating": 6.8,
+      "category": "Horror",
+      "imdbUrl": "https://www.imdb.com/title/tt1922777/",
+      "imageUrl": "sinister.jpg"
+    },
+    {
+      "id": 10,
+      "title": "The Godfather",
+      "rating": 9.2,
+      "category": "Dramă",
+      "imdbUrl": "https://www.imdb.com/title/tt0068646/",
+      "imageUrl": "nasul.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Casino Royale",
+      "rating": 8.0,
+      "category": "Acțiune",
+      "imdbUrl": "https://www.imdb.com/title/tt0381061/",
+      "imageUrl": "casino_royale.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Pirates of the Caribbean: At World's End",
+      "rating": 7.1,
+      "category": "Aventură",
+      "imdbUrl": "https://www.imdb.com/title/tt0449088/",
+      "imageUrl": "pirati.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Top Gun: Maverick",
+      "rating": 8.2,
+      "category": "Acțiune",
+      "imdbUrl": "https://www.imdb.com/title/tt1745960/",
+      "imageUrl": "top_gun.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Blade Runner 2049",
+      "rating": 8.0,
+      "category": "Sci-Fi",
+      "imdbUrl": "https://www.imdb.com/title/tt1856101/",
+      "imageUrl": "bladerunner.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Spider-Man: Into the Spider-Verse",
+      "rating": 8.4,
+      "category": "Animație",
+      "imdbUrl": "https://www.imdb.com/title/tt4633694/",
+      "imageUrl": "spider1.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Spider-Man: Across the Spider-Verse",
+      "rating": 8.6,
+      "category": "Animație",
+      "imdbUrl": "https://www.imdb.com/title/tt9362722/",
+      "imageUrl": "spider2.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Guardians of the Galaxy Vol. 3",
+      "rating": 7.9,
+      "category": "Sci-Fi",
+      "imdbUrl": "https://www.imdb.com/title/tt6791350/",
+      "imageUrl": "guardians.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Eternal Sunshine of the Spotless Mind",
+      "rating": 8.3,
+      "category": "Romantic",
+      "imdbUrl": "https://www.imdb.com/title/tt0338013/",
+      "imageUrl": "sunshine.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Fight Club",
+      "rating": 8.8,
+      "category": "Dramă",
+      "imdbUrl": "https://www.imdb.com/title/tt0137523/",
+      "imageUrl": "club.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Bullet Train",
+      "rating": 7.3,
+      "category": "Acțiune",
+      "imdbUrl": "https://www.imdb.com/title/tt12593682/",
+      "imageUrl": "bullet.jpg"
+    },
+    {
+      "id": 21,
+      "title": "Shutter Island",
+      "rating": 8.2,
+      "category": "Mister",
+      "imdbUrl": "https://www.imdb.com/title/tt1130884/",
+      "imageUrl": "shutter.jpg"
+    },
+    {
+      "id": 22,
+      "title": "V for Vendetta",
+      "rating": 8.1,
+      "category": "Acțiune",
+      "imdbUrl": "https://www.imdb.com/title/tt0434409/",
+      "imageUrl": "vendetta.jpg"
+    },
+    {
+      "id": 23,
+      "title": "Ron's Gone Wrong",
+      "rating": 7.1,
+      "category": "Animație",
+      "imdbUrl": "https://www.imdb.com/title/tt7504818/",
+      "imageUrl": "ron.jpg"
+    },
+    {
+      "id": 24,
+      "title": "Arcane",
+      "rating": 9.0,
+      "category": "Animație",
+      "imdbUrl": "https://www.imdb.com/title/tt11126994/",
+      "imageUrl": "arcane.jpg"
+    }
+  ]
+}

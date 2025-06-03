@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #1e1e1e;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 5em;
+  height: 6em;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  float: left;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  color: #f0f0f0;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: color 0.3s ease;
+  font-size: 1.5em;
+}
+
+.menu a:hover {
+  color: #ff9800;
+}
+
+.menu li:nth-of-type(n) {
+  color: #ff9800;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #333;
+  list-style: none;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+  color: #f0f0f0;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  overflow: hidden;
+  max-width: 300px;
+  width: 100%;
+  padding: 12px;
+  outline: none;
+}
+
+.search-bar input {
+  border: none;
+  padding: 8px 15px;
+  color: #cac7ff;
+  background-color: transparent;
+  outline: none;
+  font-size: 20px;
+  width: 80%;
+}
+
+.search-bar input::placeholder {
+  color: #ffffff;
+}
+
+.search-bar button {
+  background: #58629b;
+  border: 0;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.search-bar button img {
+  width: 30px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.login-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-form input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  background: #2a2a2a;
+  color: white;
+}
+
+.login-form button {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#movies-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+  margin-bottom: 80px;
+}
+
+.movie-card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s ease;
+  position: relative;
+  animation: aparitie_filme 0.6s ease-in-out;
+}
+
+.movie-card:hover {
+  transform: translateY(-10px);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-card h2 {
+  font-size: 1.2em;
+  color: #ff9800;
+  margin: 10px 0;
+}
+
+.movie-card p {
+  color: #aaa;
+}
+
+.movie-card a {
+  display: block;
+  color: #ff9800;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.movie-card a:hover {
+  text-decoration: underline;
+}
+
+.movie-card::before {
+  content: "⭐";
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #ff9800;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.movie-card:hover::before {
+  opacity: 1;
+}
+
+.favorite {
+  border: 2px solid gold !important;
+}
+
+.user-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#username-display {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.sort-controls {
+  margin: 20px;
+  text-align: center;
+}
+
+.sort-controls button {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 0.9em;
+  width: 100%;
+  animation: aparitie_footer 6s ease-in;
+}
+
+@media (max-width: 40em) {
+  .movies-grid {
+    grid-template-columns: 1fr;
+  }
+  .menu {
+    flex-direction: column;
+  }
+  .search-bar input {
+    width: 80px;
+  }
+}
+
+@keyframes aparitie_footer {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparitie_filme {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer::after {
+  content: "Follow staicustefan98 pe insta!";
+  color: #ffb100;
+}
+.incarca {
+  font-size: 2em;
+  background-color: #ff9800;
+}

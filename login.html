@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - StaicuMovies</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="icon" href="logo.png" />
+    <script src="login.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a href="index2.html">Acasă</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="login-container">
+      <form class="login-form">
+        <h2>Loghează-te</h2>
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Ex: user123"
+          required
+        />
+
+        <label for="password">Parola:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Parola"
+          required
+        />
+
+        <div class="buttons-row">
+          <button type="submit" id="login-btn">Login</button>
+          <button type="button" id="logout-btn" style="display: none">
+            Logout
+          </button>
+        </div>
+
+        <p id="login-error" style="color: red; margin-top: 1em"></p>
+      </form>
+    </div>
+  </body>
+</html>
